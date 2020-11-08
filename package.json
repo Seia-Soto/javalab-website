@@ -1,14 +1,22 @@
 {
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
+    "start": "snowpack dev --reload",
+    "build": "snowpack build --clean",
     "test": "web-test-runner \"src/**/*.test.jsx\"",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.1.1",
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27",
+    "glamor": "^2.20.40",
+    "isomorphic-unfetch": "^3.1.0",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.3",
@@ -30,6 +38,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-standard": "^4.0.1",
     "prettier": "^2.0.5",
-    "snowpack": "^2.14.3"
+    "snowpack": "^2.14.3",
+    "snowpack-plugin-import-map": "^1.1.1"
   }
 }

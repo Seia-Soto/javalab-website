@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom'
 
 import App from './App.jsx'
 
+// NOTE: Styles;
+import './styles/fontOverrides.css'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
