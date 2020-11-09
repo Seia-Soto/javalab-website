@@ -79,7 +79,13 @@ const SlackPage = props => {
             placeholder='someone@domain.tld'
             type='email'
             value={email}
-            onChange={e => setEmail(e.target.value)}
+            onChange={e => {
+              if (Number(e.keyCode) === 13) {
+                sendInvite()
+              } else {
+                setEmail(e.target.value)
+              }
+            }}
           />
           <Button
             variant='solid'

@@ -2,6 +2,7 @@
   "scripts": {
     "start": "snowpack dev --reload",
     "build": "snowpack build --clean",
+    "serve": "serve -s build",
     "test": "web-test-runner \"src/**/*.test.jsx\"",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx}\""
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.3",
     "@snowpack/plugin-react-refresh": "^2.3.2",
+    "@snowpack/plugin-webpack": "^2.1.1",
     "@snowpack/web-test-runner-plugin": "^0.1.2",
     "@testing-library/react": "^11.0.0",
     "@web/test-runner": "^0.9.0",
@@ -38,7 +40,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-standard": "^4.0.1",
     "prettier": "^2.0.5",
-    "snowpack": "^2.14.3",
-    "snowpack-plugin-import-map": "^1.1.1"
+    "serve": "^11.3.2",
+    "snowpack": "^2.14.3"
   }
 }

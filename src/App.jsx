@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/core'
 
 // NOTE: Pages
+import HomePage from './pages/Home'
 import SlackPage from './pages/Slack'
 
 const App = props => {
@@ -19,6 +20,7 @@ const App = props => {
       <CSSReset />
       <Router>
         <Switch>
+          <Route exact path='/' component={HomePage} />
           <Route exact path='/slack' component={SlackPage} />
         </Switch>
       </Router>
