@@ -11,6 +11,8 @@ JavaLab은 JAVA, C++, C# 프로그래밍, 웹개발 스터디 커뮤니티입니
 5. 정모방: https://open.kakao.com/o/ghK6Lqrb
 6. 텔레그램방: https://t.me/comduck
 
+----
+
 ## Available Scripts
 
 ### npm start
@@ -32,3 +34,7 @@ Your app is ready to be deployed!
 
 Launches the application test runner.
 Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch mode.
+
+## Publishing to Vercel
+
+If you want to use both serverless functions and static deploy of React application, use 'Create React App' template and override the bulid command with `npm run build`.
