@@ -1,9 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { css } from 'glamor'
 
-import NavItem from './NavItem'
-
-const Nav = props => {
+const NavContainer = props => {
   const styles = css({
     position: 'fixed',
     zIndex: 128,
@@ -25,12 +24,13 @@ const Nav = props => {
 
   return (
     <div {...styles}>
-      <NavItem active>
-        JavaLab
-      </NavItem>
-      <NavItem>Slack</NavItem>
+      {props.children}
     </div>
   )
 }
 
-export default Nav
+NavContainer.propTypes = {
+  children: PropTypes.any
+}
+
+export default NavContainer

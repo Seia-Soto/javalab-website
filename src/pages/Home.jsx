@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Nav from '../components/Nav'
+import Navbar from '../components/Navbar'
 
 const HomePage = props => {
   return (
-    <Nav />
+    <Navbar />
   )
 }
 

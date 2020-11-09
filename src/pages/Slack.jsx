@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/core'
 
 import ContentWrapper from '../components/ContentWrapper'
-import Nav from '../components/Nav'
+import Navbar from '../components/Navbar'
 
 const SlackPage = props => {
   const [email, setEmail] = useState('')
@@ -65,7 +65,7 @@ const SlackPage = props => {
 
   return (
     <>
-      <Nav />
+      <Navbar />
       <ContentWrapper>
         <Heading size='lg'>
           Slack 초대장 받기
